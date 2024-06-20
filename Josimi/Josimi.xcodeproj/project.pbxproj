@@ -11,6 +11,9 @@
 		E8AA826C2C2427D400185D5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA826B2C2427D400185D5D /* ContentView.swift */; };
 		E8AA826E2C2427D600185D5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8AA826D2C2427D600185D5D /* Assets.xcassets */; };
 		E8AA82712C2427D600185D5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8AA82702C2427D600185D5D /* Preview Assets.xcassets */; };
+		E8AA82792C2428A400185D5D /* MainHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA82782C2428A400185D5D /* MainHomeView.swift */; };
+		E8AA827C2C242BCE00185D5D /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA827B2C242BCE00185D5D /* SearchBarView.swift */; };
+		E8AA827F2C2433E300185D5D /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA827E2C2433E300185D5D /* LoginButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		E8AA826B2C2427D400185D5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E8AA826D2C2427D600185D5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8AA82702C2427D600185D5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E8AA82782C2428A400185D5D /* MainHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeView.swift; sourceTree = "<group>"; };
+		E8AA827B2C242BCE00185D5D /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		E8AA827E2C2433E300185D5D /* LoginButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,11 @@
 		E8AA82682C2427D400185D5D /* Josimi */ = {
 			isa = PBXGroup;
 			children = (
+				E8AA827D2C2433CD00185D5D /* LoginButton */,
+				E8AA827A2C242AAA00185D5D /* SearchBar */,
 				E8AA82692C2427D400185D5D /* JosimiApp.swift */,
 				E8AA826B2C2427D400185D5D /* ContentView.swift */,
+				E8AA82772C24281000185D5D /* MainHome */,
 				E8AA826D2C2427D600185D5D /* Assets.xcassets */,
 				E8AA826F2C2427D600185D5D /* Preview Content */,
 			);
@@ -65,6 +74,30 @@
 				E8AA82702C2427D600185D5D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E8AA82772C24281000185D5D /* MainHome */ = {
+			isa = PBXGroup;
+			children = (
+				E8AA82782C2428A400185D5D /* MainHomeView.swift */,
+			);
+			path = MainHome;
+			sourceTree = "<group>";
+		};
+		E8AA827A2C242AAA00185D5D /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				E8AA827B2C242BCE00185D5D /* SearchBarView.swift */,
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		E8AA827D2C2433CD00185D5D /* LoginButton */ = {
+			isa = PBXGroup;
+			children = (
+				E8AA827E2C2433E300185D5D /* LoginButtonView.swift */,
+			);
+			path = LoginButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8AA827C2C242BCE00185D5D /* SearchBarView.swift in Sources */,
 				E8AA826C2C2427D400185D5D /* ContentView.swift in Sources */,
+				E8AA82792C2428A400185D5D /* MainHomeView.swift in Sources */,
 				E8AA826A2C2427D400185D5D /* JosimiApp.swift in Sources */,
+				E8AA827F2C2433E300185D5D /* LoginButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
