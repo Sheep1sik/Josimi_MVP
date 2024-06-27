@@ -20,24 +20,19 @@ struct MainHomeView: View {
                     .overlay {
                         Text("로고 자리")
                     }
-                Spacer()
                 
+                Spacer()
                 // 로그인 창
                 LoginButtonView()
+                
             }
-            .padding(.vertical, 3)
-            .padding(.horizontal, 15)
-            HStack {
-                // 검색 창
-                SearchBarView()
-                    .padding(.horizontal, 6)
-            } //: HSTACK
-            .padding(.horizontal, 10)
-            .padding(.vertical, 3)
-            
-            Spacer()
-            
-            // 광고 배너
+            // 검색 창
+            SearchBarView()
+            ScrollView {
+                
+                // 광고 배너
+                ADBannerView()
+            }
         } //: NAVIGATIONSTACK
     }
 }

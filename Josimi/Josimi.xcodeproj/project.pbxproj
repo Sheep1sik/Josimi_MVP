@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E85C7FF02C2988A000E9F875 /* ADBannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C7FEF2C2988A000E9F875 /* ADBannerViewModel.swift */; };
+		E85C7FFC2C29A8A900E9F875 /* ADBannerItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C7FFB2C29A8A900E9F875 /* ADBannerItemView.swift */; };
+		E85C7FFF2C29A8E200E9F875 /* ADBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C7FFE2C29A8E200E9F875 /* ADBannerView.swift */; };
+		E85C80012C29A94200E9F875 /* InfinitePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C80002C29A94200E9F875 /* InfinitePageView.swift */; };
+		E85C80042C29B2E300E9F875 /* ADBannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C80032C29B2E300E9F875 /* ADBannerModel.swift */; };
 		E8AA826A2C2427D400185D5D /* JosimiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA82692C2427D400185D5D /* JosimiApp.swift */; };
 		E8AA826C2C2427D400185D5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA826B2C2427D400185D5D /* ContentView.swift */; };
 		E8AA826E2C2427D600185D5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8AA826D2C2427D600185D5D /* Assets.xcassets */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E85C7FEF2C2988A000E9F875 /* ADBannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADBannerViewModel.swift; sourceTree = "<group>"; };
+		E85C7FFB2C29A8A900E9F875 /* ADBannerItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADBannerItemView.swift; sourceTree = "<group>"; };
+		E85C7FFE2C29A8E200E9F875 /* ADBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADBannerView.swift; sourceTree = "<group>"; };
+		E85C80002C29A94200E9F875 /* InfinitePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinitePageView.swift; sourceTree = "<group>"; };
+		E85C80032C29B2E300E9F875 /* ADBannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADBannerModel.swift; sourceTree = "<group>"; };
 		E8AA82662C2427D400185D5D /* Josimi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Josimi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8AA82692C2427D400185D5D /* JosimiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JosimiApp.swift; sourceTree = "<group>"; };
 		E8AA826B2C2427D400185D5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +48,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E85C7FE82C297F2600E9F875 /* ADBanner */ = {
+			isa = PBXGroup;
+			children = (
+				E85C7FFD2C29A8BC00E9F875 /* View */,
+				E85C7FF12C298B5100E9F875 /* ViewModel */,
+			);
+			path = ADBanner;
+			sourceTree = "<group>";
+		};
+		E85C7FF12C298B5100E9F875 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E85C7FEF2C2988A000E9F875 /* ADBannerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E85C7FFD2C29A8BC00E9F875 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E85C7FFB2C29A8A900E9F875 /* ADBannerItemView.swift */,
+				E85C7FFE2C29A8E200E9F875 /* ADBannerView.swift */,
+				E85C80002C29A94200E9F875 /* InfinitePageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E85C80022C29B2D000E9F875 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E85C80032C29B2E300E9F875 /* ADBannerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E8AA825D2C2427D400185D5D = {
 			isa = PBXGroup;
 			children = (
@@ -57,11 +102,13 @@
 		E8AA82682C2427D400185D5D /* Josimi */ = {
 			isa = PBXGroup;
 			children = (
+				E85C7FE82C297F2600E9F875 /* ADBanner */,
 				E8AA827D2C2433CD00185D5D /* LoginButton */,
 				E8AA827A2C242AAA00185D5D /* SearchBar */,
 				E8AA82692C2427D400185D5D /* JosimiApp.swift */,
 				E8AA826B2C2427D400185D5D /* ContentView.swift */,
 				E8AA82772C24281000185D5D /* MainHome */,
+				E85C80022C29B2D000E9F875 /* Model */,
 				E8AA826D2C2427D600185D5D /* Assets.xcassets */,
 				E8AA826F2C2427D600185D5D /* Preview Content */,
 			);
@@ -171,9 +218,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8AA827C2C242BCE00185D5D /* SearchBarView.swift in Sources */,
+				E85C7FFF2C29A8E200E9F875 /* ADBannerView.swift in Sources */,
+				E85C80042C29B2E300E9F875 /* ADBannerModel.swift in Sources */,
 				E8AA826C2C2427D400185D5D /* ContentView.swift in Sources */,
+				E85C80012C29A94200E9F875 /* InfinitePageView.swift in Sources */,
 				E8AA82792C2428A400185D5D /* MainHomeView.swift in Sources */,
 				E8AA826A2C2427D400185D5D /* JosimiApp.swift in Sources */,
+				E85C7FF02C2988A000E9F875 /* ADBannerViewModel.swift in Sources */,
+				E85C7FFC2C29A8A900E9F875 /* ADBannerItemView.swift in Sources */,
 				E8AA827F2C2433E300185D5D /* LoginButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
