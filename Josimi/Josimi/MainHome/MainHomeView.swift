@@ -13,21 +13,37 @@ struct MainHomeView: View {
         NavigationStack {
             // 상단 바
             HStack {
-                // 로고
-                Rectangle()
-                    .frame(width: 71, height: 36)
-                    .foregroundColor(Color(.lightGray))
+                // 관심질병 명
+                RoundedRectangle(cornerRadius: 13)
+                    .stroke(Color.green, lineWidth: 2)
+                    .frame(width: 65, height: 32)
                     .overlay {
-                        Text("로고 자리")
+                        Text("당뇨")
+                            .foregroundColor(.green)
+                            .fontWeight(.semibold)
                     }
                 
                 Spacer()
-                // 로그인 창
-                LoginButtonView()
+                
+                // 조시미 로고
+                Image("josimi_title")
+                    .padding(.trailing, 25)
+                
+                Spacer()
+                
+                // 내 소식 버튼
+                Button(action: {
+                    
+                }, label: {
+                    Image("Notification")
+                })
                 
             }
+            .padding(.horizontal)
+            
             // 검색 창
             SearchBarView()
+            
             ScrollView {
                 
                 // 광고 배너

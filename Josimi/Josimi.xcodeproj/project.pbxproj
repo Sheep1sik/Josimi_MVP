@@ -17,7 +17,7 @@
 		E884DE9B2C32EBF600D1B884 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884DE9A2C32EBF600D1B884 /* CameraView.swift */; };
 		E884DE9D2C32EC0900D1B884 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884DE9C2C32EC0900D1B884 /* CartView.swift */; };
 		E884DE9F2C32EC1D00D1B884 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884DE9E2C32EC1D00D1B884 /* AccountView.swift */; };
-		E884DEA12C32ECF800D1B884 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884DEA02C32ECF800D1B884 /* CustomTabView.swift */; };
+		E884DEA12C32ECF800D1B884 /* CustomTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884DEA02C32ECF800D1B884 /* CustomTabbarView.swift */; };
 		E884DEA32C32F86100D1B884 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884DEA22C32F86100D1B884 /* ButtonView.swift */; };
 		E8AA826A2C2427D400185D5D /* JosimiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA82692C2427D400185D5D /* JosimiApp.swift */; };
 		E8AA826C2C2427D400185D5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA826B2C2427D400185D5D /* ContentView.swift */; };
@@ -25,7 +25,6 @@
 		E8AA82712C2427D600185D5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8AA82702C2427D600185D5D /* Preview Assets.xcassets */; };
 		E8AA82792C2428A400185D5D /* MainHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA82782C2428A400185D5D /* MainHomeView.swift */; };
 		E8AA827C2C242BCE00185D5D /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA827B2C242BCE00185D5D /* SearchBarView.swift */; };
-		E8AA827F2C2433E300185D5D /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA827E2C2433E300185D5D /* LoginButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +38,7 @@
 		E884DE9A2C32EBF600D1B884 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		E884DE9C2C32EC0900D1B884 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		E884DE9E2C32EC1D00D1B884 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
-		E884DEA02C32ECF800D1B884 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		E884DEA02C32ECF800D1B884 /* CustomTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbarView.swift; sourceTree = "<group>"; };
 		E884DEA22C32F86100D1B884 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		E8AA82662C2427D400185D5D /* Josimi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Josimi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8AA82692C2427D400185D5D /* JosimiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JosimiApp.swift; sourceTree = "<group>"; };
@@ -48,7 +47,6 @@
 		E8AA82702C2427D600185D5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E8AA82782C2428A400185D5D /* MainHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeView.swift; sourceTree = "<group>"; };
 		E8AA827B2C242BCE00185D5D /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
-		E8AA827E2C2433E300185D5D /* LoginButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				E884DE922C32E8BD00D1B884 /* TabbarView.swift */,
-				E884DEA02C32ECF800D1B884 /* CustomTabView.swift */,
+				E884DEA02C32ECF800D1B884 /* CustomTabbarView.swift */,
 				E884DEA22C32F86100D1B884 /* ButtonView.swift */,
 			);
 			path = Tabbar;
@@ -164,7 +162,6 @@
 				E884DE942C32EBA900D1B884 /* WishList */,
 				E884DE912C32E8A400D1B884 /* Tabbar */,
 				E85C7FE82C297F2600E9F875 /* ADBanner */,
-				E8AA827D2C2433CD00185D5D /* LoginButton */,
 				E8AA827A2C242AAA00185D5D /* SearchBar */,
 				E8AA82692C2427D400185D5D /* JosimiApp.swift */,
 				E8AA826B2C2427D400185D5D /* ContentView.swift */,
@@ -198,14 +195,6 @@
 				E8AA827B2C242BCE00185D5D /* SearchBarView.swift */,
 			);
 			path = SearchBar;
-			sourceTree = "<group>";
-		};
-		E8AA827D2C2433CD00185D5D /* LoginButton */ = {
-			isa = PBXGroup;
-			children = (
-				E8AA827E2C2433E300185D5D /* LoginButtonView.swift */,
-			);
-			path = LoginButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,10 +279,9 @@
 				E884DE9D2C32EC0900D1B884 /* CartView.swift in Sources */,
 				E884DE9F2C32EC1D00D1B884 /* AccountView.swift in Sources */,
 				E8AA826A2C2427D400185D5D /* JosimiApp.swift in Sources */,
-				E884DEA12C32ECF800D1B884 /* CustomTabView.swift in Sources */,
+				E884DEA12C32ECF800D1B884 /* CustomTabbarView.swift in Sources */,
 				E85C7FF02C2988A000E9F875 /* ADBannerViewModel.swift in Sources */,
 				E85C7FFC2C29A8A900E9F875 /* ADBannerItemView.swift in Sources */,
-				E8AA827F2C2433E300185D5D /* LoginButtonView.swift in Sources */,
 				E884DE992C32EBD300D1B884 /* WishListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

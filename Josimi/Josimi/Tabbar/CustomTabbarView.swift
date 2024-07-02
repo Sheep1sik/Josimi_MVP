@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CustomTabView: View {
+struct CustomTabbarView: View {
     @Binding var selectedTab: Tab
     
     var body: some View {
@@ -22,18 +22,23 @@ struct CustomTabView: View {
                 HStack {
                     Spacer()
                     Spacer()
+                    // 홈 버튼
                     Button {
                         selectedTab = .home
                     } label: {
                         selectedTab == .home ? ButtonView(imageName: "house.fill") : ButtonView(imageName: "house")
                     }
                     Spacer()
+                    
+                    // 찜 목록
                     Button {
                         selectedTab = .wishList
                     } label: {
                         selectedTab == .wishList ? ButtonView(imageName: "heart.fill") : ButtonView(imageName: "heart")
                     }
                     Spacer()
+                    
+                    // 카메라
                     Button {
                         selectedTab = .camera
                     } label: {
@@ -43,12 +48,16 @@ struct CustomTabView: View {
                             .offset(y: -20)
                     }
                     Spacer()
+                    
+                    // 장바구니
                     Button {
                         selectedTab = .cart
                     } label: {
                         selectedTab == .cart ? ButtonView(imageName: "cart.fill") : ButtonView(imageName: "cart")
                     }
                     Spacer()
+                    
+                    // 마이페이지
                     Button {
                         selectedTab = .account
                     } label: {
@@ -65,5 +74,5 @@ struct CustomTabView: View {
 
 
 #Preview {
-    CustomTabView(selectedTab: .constant(Tab.home))
+    CustomTabbarView(selectedTab: .constant(Tab.home))
 }

@@ -31,7 +31,7 @@ struct TabbarView: View {
             case .account:
                 AccountView()
             }
-            CustomTabView(selectedTab: $selectedTab)
+            CustomTabbarView(selectedTab: $selectedTab)
         }
     }
 }

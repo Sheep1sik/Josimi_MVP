@@ -11,7 +11,7 @@ import SwiftUI
 struct JosimiApp: App {
     var body: some Scene {
         WindowGroup {
-            MainHomeView()
+            TabbarView()
         }
     }
 }
