@@ -18,7 +18,7 @@ enum Tab {
 struct TabbarView: View {
     @State var selectedTab: Tab = .home
     var body: some View {
-        VStack {
+        NavigationStack{
             switch selectedTab {
             case .home:
                 MainHomeView()

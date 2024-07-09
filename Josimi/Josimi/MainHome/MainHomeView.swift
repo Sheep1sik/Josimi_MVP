@@ -41,8 +41,10 @@ struct MainHomeView: View {
             }
             .padding(.horizontal)
             
-            // 검색 창
-            SearchBarView()
+            NavigationLink(destination: SearchView()){
+                // 검색 창
+                SearchBarView()
+            }
             
             ScrollView {
                 
