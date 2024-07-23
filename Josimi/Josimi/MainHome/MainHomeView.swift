@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct MainHomeView: View {
+    @State private var path = NavigationPath()
     
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             // 상단 바
             HStack {
                 // 관심질병 명
@@ -41,7 +42,7 @@ struct MainHomeView: View {
             }
             .padding(.horizontal)
             
-            NavigationLink(destination: SearchView()){
+            NavigationLink(destination: SearchView(path: $path)){
                 // 검색 창
                 SearchBarView()
             }
@@ -50,6 +51,10 @@ struct MainHomeView: View {
                 
                 // 광고 배너
                 ADBannerView()
+                
+                // 제품 추천
+                UserRecommendedView()
+                    .padding(.vertical)
             }
         } //: NAVIGATIONSTACK
     }
